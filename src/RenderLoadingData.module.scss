@@ -1,0 +1,38 @@
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.position {
+  position: absolute;
+}
+
+.loadingOuter {
+  animation: loading 3s linear infinite;
+}
+
+.loadingInner {
+  animation: loading 3s linear infinite reverse;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  background: white;
+}
