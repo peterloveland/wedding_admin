@@ -1,0 +1,68 @@
+.buttonContainer {
+  all: unset;
+  // unset style
+  border: unset;
+  // unset style
+  // border: 2px solid var(--blue-90);
+  background-color: var(--blue-70);
+  color: white;
+  padding: 0.3rem 1rem 0.5rem 1rem;
+  text-transform: lowercase;
+  border-radius: 999px;
+  font-variant: small-caps;
+  font-size: 1.25rem;
+  cursor: pointer;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  box-shadow: 0px 4px 6px 0px #f3f3f3;
+  letter-spacing: 1px;
+  &.small {
+    height: 20px;
+    font-size: 1rem;
+  }
+  &.medium {
+    height: 24px;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-size: 1rem;
+  }
+  &.large {
+    height: 36px;
+    font-size: 1.5rem;
+  }
+  &.iconVariant {
+    padding: 0;
+    width: 32px;
+    align-items: center;
+    justify-content: center;
+  }
+  &:hover {
+    background-color: var(--blue-80);
+    border-color: var(--blue-70);
+    color: white;
+  }
+  &.ghost {
+    background: transparent;
+    color: var(--text-default);
+    border: none;
+    box-shadow: none;
+    &:hover {
+      background-color: var(--gray-1);
+    }
+  }
+  &.secondary {
+    background-color: var(--button-bg-secondary);
+    color: var(--gray-40);
+    &:hover {
+      background-color: var(--button-bg-secondary-hover);
+    }
+  }
+  &.danger {
+    background: var(--red-50);
+  }
+  &.success {
+    background: green;
+  }
+}

@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  padding: 1rem;
+}
+
+.smallCaps {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.15em;
+}
+
+.muted {
+  color: var(--text-muted);
+}
