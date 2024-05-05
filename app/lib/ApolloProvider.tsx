@@ -8,13 +8,13 @@ import {
   NextSSRInMemoryCache,
   SSRMultipartLink,
 } from "@apollo/experimental-nextjs-app-support/ssr";
+import config from "../../aws-exports";
 
 function makeClient() {
-  // TO DO HDIE THIS API
   const httpLink = new HttpLink({
-    uri: "https://j6pyq2el6rd4hfxf6jyxeasksy.appsync-api.eu-west-2.amazonaws.com/graphql",
+    uri: config.API.GraphQL.endpoint,
     headers: {
-      "x-api-key": "da2-aug7nx5jgvbjfksuzbllf2q5tu",
+      "x-api-key": config.API.GraphQL.apiKey,
     },
   });
 
